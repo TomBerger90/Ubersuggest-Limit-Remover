@@ -1,0 +1,24 @@
+{
+    "name": "Ubersuggest Limit Remover",
+    "description": "Bypass Ubersuggest limitations by removing local storage",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {
+        "16": "/icon/16.png",
+        "32": "/icon/32.png",
+        "64": "/icon/64.png",
+        "128": "/icon/128.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "cookies",
+        "activeTab",
+        "scripting",
+        "tabs"
+    ],
+    "host_permissions": [
+        "https://app.neilpatel.com/*"
+    ]
+}
